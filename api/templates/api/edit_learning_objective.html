@@ -1,0 +1,15 @@
+{% extends "api/base.html" %}
+
+{% block content %}
+
+<div>
+    
+    <p>Edit learning Journey:</p>
+    <form action="{% url 'edit_learning_obj' learning_obj.id %}" method='post'>
+        {% csrf_token %}
+        {{ form.as_p }}
+        <input type="submit" value="SAVE CHANGES">
+    </form>
+</div>
+
+{% endblock content %}

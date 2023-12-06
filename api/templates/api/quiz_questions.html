@@ -1,0 +1,19 @@
+{% extends "api/base.html" %}
+
+{% block content %}
+<br>
+<div>
+    <p> QUIZ QUESTIONS for {{ quiz.quiz_title }}</p>
+    <p>
+        {% for question in questions %}
+        <p><a href="{% url 'question_details' question.id %}">{{ question.question }}</a></p>
+        <a href="{% url 'edit_question' question.id %}">Edit Question</a>&nbsp;&nbsp;
+        <a href="{% url 'delete_question' question.id %}"> Delete Question</a><br><br>
+            {% empty %}
+                <p>No question have been added yet.</p>
+        {% endfor %}
+    <br><br>
+    <a href="{% url 'add_question' quiz.id %}"><input type='submit' value='ADD NEW QUESTION'></a>
+    </p>
+</div>
+{% endblock content %}

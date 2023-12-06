@@ -1,0 +1,11 @@
+{% extends 'api/base.html' %}
+{% block content %}
+<div>
+    {% for obj in all_objs %}
+        <a href="{% url 'specific_learning_obj_detail' obj.id %}"><p>{{ obj }}</p><br>
+    {% endfor %}
+
+    <a href="{% url 'add_learning_objective'  %}"><input type='submit' value='ADD LEARNING OBJECTIVE'></a>
+
+</div>
+{% endblock content %}

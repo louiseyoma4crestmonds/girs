@@ -1,0 +1,10 @@
+{% extends 'api/base.html' %}
+{% block content %}
+<div>
+    {% for journey in learning_journeys %}
+        <p><a href="{% url 'user_learning_objective' journey.id %}">{{ journey }}</a></p><br>
+        {% endfor %}
+    
+
+</div>
+{% endblock content %}

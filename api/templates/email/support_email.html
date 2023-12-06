@@ -1,0 +1,53 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>
+    Transaction Receipt
+    </title>
+    <style>
+    .container {
+        width: 40%;
+        padding: 2%;
+        border: 1px solid;
+        border-color: #919191;
+        background-color: white;
+        font-family: 'Courier New', Courier, monospace;
+    }
+    .detail {
+        font-weight: 400;
+        font-size: 18px;
+        color: #919191;
+    }
+    td {
+        border-bottom: 1px solid black;
+        padding: 20px;
+        overflow-x: auto;
+    }
+    table {
+        width: 35%;
+    }
+    </style>
+</head>
+<body>
+    <div class="w-full h-full border border-black p-12">
+    <div class="w-full">
+        <img
+        src="https://crestlearn-profile-photos.s3.eu-west-2.amazonaws.com/crestlearn-logo.svg"
+        />
+    </div>
+    <div class="w-full mt-12">
+        
+
+        <table class="w-full">
+            <h3>Support Message</h3>
+            <tr><td>{{sender}}</td></tr>
+            <tr><td>{{subject}}</td></tr>
+            <tr><td>{{message}}</td></tr>
+        </table>
+    </div>
+</body>
+</html>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            
+            ul {
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+                overflow: hidden;
+                background-color: #79aec8;
+                
+            }
+
+            li {
+                float: left;
+            }
+
+            li a {
+                display: block;
+                color: white;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+                
+            }
+
+            /* Change the link color to #09374e; on hover */
+            li a:hover {
+                background-color: #09374e;
+            }
+
+            div {
+                font-size: 14px;
+                font-family: "Roboto","Lucida Grande","DejaVu Sans","Bitstream Vera Sans",Verdana,Arial,sans-serif;
+                padding-left: 20px;
+            }
+
+            input[type=text] {
+                width: 50%;
+                padding: 12px 20px;
+                margin-top: 10px;
+                box-sizing: border-box;
+                border: 2px solid #ccc;
+                border-radius: 4px;
+                background-color: #f8f8f8;
+
+            }
+
+            textarea {
+                width: 60%;
+                height: 200px;
+                padding: 12px 20px;
+                box-sizing: border-box;
+                border: 2px solid #ccc;
+                border-radius: 4px;
+                background-color: #f8f8f8;
+                margin-top: 10px;
+                resize: none;
+                
+            }
+
+            select {
+                width: 15%;
+                padding: 16px 20px;
+                border: 2px solid black;
+                border-radius: 4px;
+                background-color: #f8f8f8;
+                margin-top: 10px;
+            }
+
+            input[type=button], input[type=submit], input[type=reset] {
+                background-color: #79aec8;
+                color: white;
+                padding: 16px 32px;
+                text-decoration: none;
+                margin-top: 10px;
+                cursor: pointer;
+                border: 4px;
+                border-radius: 10px;
+                
+            }
+
+    
+        </style>
+    </head>
+    <body>
+        <ul>
+        
+            <li><a href="{% url 'quizzes' %}">QUIZES</a></li>
+            <li><a href="{% url 'all_learning_objs'  %}">LEARNING OBJECTIVES</a></li>
+            <li><a href="{% url 'learning_journey' %}"> ACTIVE LEARNING JOURNEYS</a></li>
+          
+        </ul>
+               
+    </body>
+</html>
+
+{% block content %}{% endblock content %}

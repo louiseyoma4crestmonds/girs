@@ -1,0 +1,14 @@
+{% extends "api/base.html" %}
+
+{% block content %}
+
+<div>
+    <p>Add a new quiz:</p>
+    <form action="{% url 'add_quiz' %}" method='post'>
+        {% csrf_token %}
+        {{ form.as_p }}<br>
+        <input type="submit" value="ADD QUIZ">
+    </form>
+</div>
+
+{% endblock content %}

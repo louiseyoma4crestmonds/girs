@@ -1,0 +1,12 @@
+{% extends "api/base.html" %}
+{% block content %}
+<div>
+    {% for objs in learning_objs %}
+        <a href="{% url 'learning_obj_detail' objs.id %}"><p>{{ objs.learning_objective.title }}</p></a><br>
+        {% empty %}
+                <p>User have no active learning journey.</p>
+    {% endfor %}
+
+    <a href="{% url 'add_learning_journey' %}"><input type='submit' value='ADD LEARNING JOURNEY'></a><br><br>
+</div>
+{% endblock content %}

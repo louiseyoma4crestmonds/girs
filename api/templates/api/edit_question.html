@@ -1,0 +1,15 @@
+{% extends "api/base.html" %}
+
+{% block content %}
+
+<div>
+    <p><a href="{% url 'quiz_questions' quiz.id %}">{{ question }}</a></p>
+    <p>Edit Question:</p>
+    <form action="{% url 'edit_question' question.id %}" method='post'>
+        {% csrf_token %}
+        {{ form.as_p }}
+        <input type="submit" value="SAVE CHANGES">
+    </form>
+</div>
+
+{% endblock content %}

@@ -1,0 +1,19 @@
+
+{
+
+
+	"DOMAIN_PROTOCOL": "http://",
+	"DOMAIN_NAME": "localhost:8000",
+	"FRONTEND_DOMAIN_NAME": "localhost:3000",
+	"EMAIL_HOST": "smtp.mailgun.org",
+	"EMAIL_PORT": "587",
+	"EMAIL_HOST_USER": "postmaster@mg.shim-ucth.org ",
+	"EMAIL_HOST_PASSWORD": "d6a4a189163cef6a17cd24019312a469-30b9cd6d-904405b7",
+	"AWS_REGION": "eu-west-2",
+	"AWS_CRESTLEARN_PROFILE_IMAGE_BUCKET": "crestlearn-profile-photos",
+	"DEFAULT_PROFILE_IMAGE": "crestlearn-profile-photos.s3.eu-west-2.amazonaws.com/default-profile-image.png"
+
+
+
+
+}

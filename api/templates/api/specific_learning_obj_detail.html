@@ -1,0 +1,16 @@
+{% extends "api/base.html" %}
+
+{% block content %}
+
+<div>
+    <p>TITLE : {{ specific_learning_obj.title }}</p>
+    <p>LEARNING JOURNEY: {{  specific_learning_obj.learning_journey }}</p>
+    <p>WEIGHT: {{  specific_learning_obj.weight }}</p>
+    <p>QUIZ: {{ specific_learning_obj.quiz }}</p><br><br><br>
+
+    <a href="{% url 'edit_learning_obj' specific_learning_obj.id  %}"><input type='submit' value='EDIT LEARNING OBJECTIVE'></a>
+    <a href="{% url 'delete_learning_obj' specific_learning_obj.id  %}"><input type='submit' value='DELETE LEARNING OBJECTIVE'></a>
+
+</div>
+{% endblock content %}
+

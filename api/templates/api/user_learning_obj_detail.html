@@ -1,0 +1,22 @@
+{% extends "api/base.html" %}
+
+{% block content %}
+
+<div>
+    <p>LEARNING OBJECTIVE : {{ active_journey.learning_objective.title }}</p>
+    <p>PROGRESS STATUS: {{ active_journey.progress_status }}</p>
+    <p>SCORE: {{ active_journey.score }}</p>
+    <p>STARS: {{ active_journey.stars }}</p>
+    <p>COINS EARNED: {{ active_journey.coins_earned }}</p>
+    <p>RIGHT QUIZ ANSWERS: {{ active_journey.right_quiz_answers }}</p>
+    <p>WRONG QUIZ ANSWERS: {{ active_journey.wrong_quiz_answers }}</p>
+
+</div>
+
+<div>
+    <a href="{% url 'edit_learning_journey' active_journey.id   %}"><input type="submit" value="EDIT LEARNING JOURNEY"></a>
+    <a href="{% url 'delete_learning_journey' active_journey.id   %}"><input type="submit" value="DELETE LEARNING JOURNEY"></a>
+</div>
+{% endblock content %}
+
+

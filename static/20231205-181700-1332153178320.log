@@ -1,0 +1,47 @@
+Content-Type: multipart/alternative;
+ boundary="===============6864272651292413339=="
+MIME-Version: 1.0
+Subject: GIRS account created successfully
+From: noreply@example.com
+To: a@a.com
+Date: Tue, 05 Dec 2023 17:17:00 -0000
+Message-ID: <170179662095.20452.12737000282210524120@OuimasGlobal>
+
+--===============6864272651292413339==
+Content-Type: text/html; charset="utf-8"
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+
+<div>
+  <h6>Hello </h6>
+  <br />
+  <br />
+  <p>Welcome to the CrestLearn World</p>
+
+  <br />
+  <br />
+  <p>
+    Your CrestLearn Account has been created and your log in details are below.
+  </p>
+  <br />
+  <p>Username: a@a.com</p>
+  <p>Password is: LSQMDQIVEVOI</p>
+  <br />
+  <br />
+
+  <p>
+    Please visit here
+    <a href="http://localhost:3000">http://localhost:3000</a>
+    to log in.
+  </p>
+
+  <p>Enjoy!</p>
+
+  <p>Best Regards!</p>
+
+  <p>Team CrestLearn.</p>
+</div>
+
+--===============6864272651292413339==--
+
+-------------------------------------------------------------------------------

@@ -1,0 +1,14 @@
+{% extends "api/base.html" %}
+
+{% block content %}
+
+<div>
+    <p>ADD LEARNING OBJECTIVE:</p>
+    <form action="{% url 'add_learning_objective' %}" method='post'>
+        {% csrf_token %}
+        {{ form.as_p }}
+        <input type="submit" value="ADD">
+    </form>
+</div>
+
+{% endblock content %}
